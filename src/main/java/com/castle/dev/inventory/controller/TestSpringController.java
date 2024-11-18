@@ -14,6 +14,10 @@ public class TestSpringController {
 	public String ejemplo() {
 		return "ejemplo";
 	}
+	@GetMapping("/	")
+	public String elfindelmundoseacerca() {
+		return "elfindelmundoseacerca";
+	}
 
 }
 
