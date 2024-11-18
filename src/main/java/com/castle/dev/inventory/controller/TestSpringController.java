@@ -10,5 +10,11 @@ public class TestSpringController {
 	public String hola() {
 		return "hola";
 	}
+	@GetMapping("/ejemplo")
+	public String ejemplo() {
+		return "ejemplo";
+	}
 
 }
+
+
