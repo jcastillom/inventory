@@ -1,16 +1,14 @@
 package com.castle.dev.inventory.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-@RequestMapping(value = "/inicio")
+@Controller
 public class TestSpringController {
 	
-	@GetMapping(value = "/ejemploSB")
-	public String obtenerEjemplo() {
-		return "Hola mundo Spring boot";
+	@GetMapping("/hola")
+	public String hola() {
+		return "hola";
 	}
 
 }
