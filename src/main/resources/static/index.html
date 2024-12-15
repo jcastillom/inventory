@@ -1,9 +1,15 @@
+<!--
 <!DOCTYPE html>
-<html lang="es">  
+<html lang="es" xmlns:th=http://www.thymeleaf.org>  
 <head>    
     <title>Título de la WEB</title>    
-    <meta charset="UTF-8">
-    <script src="script.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="shortcut icon" href="#">
+    
+    <script src="scripts/externos/jquery-3.7.1.min.js"></script>
+    <script src="scripts/inicio.js"></script>
+
+    <meta name="ctx" th:content="@{/}" />
 </head>  
 <body>    
     <header>
@@ -11,7 +17,7 @@
     </header>    
     <nav>
         <ul>
-            <li><a href="#">Inicio</a></li>
+            <li><a th:href="@{'/hola'}">Inicio</a></li>
             <li><a href="#">Servicios</a></li>
             <li><a href="#">Contacto</a></li>
        </ul>
@@ -33,3 +39,4 @@
     </footer>
 </body>  
 </html>
+-->
