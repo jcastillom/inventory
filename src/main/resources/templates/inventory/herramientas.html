@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th=http://www.thymeleaf.org>  
+<head>    
+    <title>Herramientas</title>    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="shortcut icon" href="#">
+
+    <!--<script type="text/javascript" th:href="@{/scripts/hola.js}"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>  
+<body>    
+    <header>
+        <h1>Consulta de herramientas</h1>      
+    </header>
+    
+    <br><br>
+
+    <a th:href="@{'/inicio'}">Ir a inicio</a></li>
+    
+    <br><br>
+    
+    <table border="1">
+	    <tr th:each="herramienta: ${listaHerramientas}">
+			<td th:text="${herramienta.idHerramienta}"></td>
+			<td th:text="${herramienta.folio}"></td>
+			<td th:text="${herramienta.descripcion}"></td>
+			<td th:text="${herramienta.detalle}"></td>
+			<td th:text="${herramienta.marca}"></td>
+			<td th:text="${herramienta.cveTipoHerramienta}"></td>
+		</tr>
+	</table>
+
+</body>  
+</html>

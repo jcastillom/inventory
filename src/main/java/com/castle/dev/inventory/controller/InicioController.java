@@ -4,11 +4,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.castle.dev.inventory.base.BaseController;
+import com.castle.dev.inventory.base.Base;
 
 @Controller
 @RequestMapping("/")
-public class InicioController extends BaseController{
+public class InicioController extends Base {
 	
 	@GetMapping("/inicio")
 	public String inicio() {
